@@ -5,12 +5,14 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import Offers from './pages/Offers';
+import Header from './components/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/profile" element={<Profile/>} />
